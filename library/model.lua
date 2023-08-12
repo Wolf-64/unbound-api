@@ -2,157 +2,156 @@
 
 -- Models are the things you see when you sculpt or play a game.
 -- Whether it is a ball, a cow or a space-ship, these are volumetric models made up of many primitives fused together.
-local model = {}
+model = {}
 
 ---Set how much metalness to give to a model. Range is 0.0 to 1.0.
 ---@param model Entity a pointer to a model in the world.
 ---@param value number.
-function model.setModelMetalness(model, value) end
+function setModelMetalness(model, value) end
 
 ---Get the metalness of a model.
 ---@param model Entity a pointer to a model in the world.
 ---@return float
-function model.getModelMetalness(model) end
+function getModelMetalness(model) end
 
 ---Set how much roughness to give to a model. Range is 0.0 to 1.0.
 ---@param model Entity a pointer to a model in the world.
 ---@param value number.
-function model.setModelRoughness(model, value) end
+function setModelRoughness(model, value) end
 
 ---Get the roughness of a model.
 ---@param model Entity a pointer to a model in the world.
 ---@return float
-function model.getModelRoughness(model) end
+function getModelRoughness(model) end
 
 ---Set how much emission to give to a model.
 ---@param model Entity a pointer to a model in the world.
 ---@param value number.
-function model.setModelEmission(model, value) end
+function setModelEmission(model, value) end
 
 ---Get the emission of a model.
 ---@param model Entity a pointer to a model in the world.
 ---@return vec4 The xyz components are used for color and the w component is used for emission. All values in 0.0 to 1.0 range
-function model.getModelEmission(model) end
+function getModelEmission(model) end
 
 ---Set which splat pattern to use for this model.
 ---Set which splat pattern to use for this model.
 ---@param model Entity a pointer to a model in the world.
 ---@param value number.
-function model.setModelSplatPattern(model, value) end
+function setModelSplatPattern(model, value) end
 
 ---Get get the index of the splat pattern.
 ---@param model Entity a pointer to a model in the world.
 ---@return int
-function model.getModelSplatPattern(model) end
+function getModelSplatPattern(model) end
 
 ---Set splat scale. Range is 0.0 to 1.0.
 ---@param model Entity a pointer to a model in the world.
 ---@param value number.
-function model.setModelSplatScale(model, value) end
+function setModelSplatScale(model, value) end
 
 ---Get splat scale.
 ---@param model Entity a pointer to a model in the world.
 ---@return float
-function model.getModelSplatScale(model) end
+function getModelSplatScale(model) end
 
 ---Set splat density. Range is 0.0 to 1.0.
 ---@param model Entity a pointer to a model in the world.
 ---@param value number.
-function model.setModelSplatDensity(model, value) end
+function setModelSplatDensity(model, value) end
 
 ---Get splat density.
 ---@param model Entity a pointer to a model in the world.
 ---@return float
-function model.getModelSplatDensity(model) end
+function getModelSplatDensity(model) end
 
 ---Set splat jitter position amount. Range is 0.0 to 1.0.
 ---@param model Entity a pointer to a model in the world.
 ---@param value number.
-function model.setModelSplatJitterPosition(model, value) end
+function setModelSplatJitterPosition(model, value) end
 
 ---Get splat jitter position amount.
 ---@param model Entity a pointer to a model in the world.
 ---@return float
-function model.getModelSplatJitterPosition(model) end
+function getModelSplatJitterPosition(model) end
 
 ---Set splat jitter orientation amount. Range is 0.0 to 1.0.
 ---@param model Entity a pointer to a model in the world.
 ---@param value number.
-function model.setModelSplatJitterOrientation(model, value) end
+function setModelSplatJitterOrientation(model, value) end
 
 ---Get splat jitter orientation amount.
 ---@param model Entity a pointer to a model in the world.
 ---@return float
-function model.getModelSplatJitterOrientation(model) end
+function getModelSplatJitterOrientation(model) end
 
 ---Set splat jitter scale amount. Range is 0.0 to 1.0.
 ---@param model Entity a pointer to a model in the world.
 ---@param value number.
-function model.setModelSplatJitterScale(model, value) end
+function setModelSplatJitterScale(model, value) end
 
 ---Get splat jitter scale amount.
 ---@param model Entity a pointer to a model in the world.
 ---@return float
-function model.getModelSplatJitterScale(model) end
+function getModelSplatJitterScale(model) end
 
 ---Set splat jitter brightness amount. Range is 0.0 to 1.0.
 ---@param model Entity a pointer to a model in the world.
 ---@param value number.
-function model.setModelSplatJitterBrightness(model, value) end
+function setModelSplatJitterBrightness(model, value) end
 
 ---Get splat jitter brightness amount.
 ---@param model Entity a pointer to a model in the world.
 ---@return float
-function model.getModelSplatJitterBrightness(model) end
+function getModelSplatJitterBrightness(model) end
 
 ---Set splat jitter hue amount. Range is 0.0 to 1.0.
 ---@param model Entity a pointer to a model in the world.
 ---@param value number.
-function model.setModelSplatJitterHue(model, value) end
+function setModelSplatJitterHue(model, value) end
 
 ---Get splat jitter hue amount.
 ---@param model Entity a pointer to a model in the world.
 ---@return float
-function model.getModelSplatJitterHue(model) end
+function getModelSplatJitterHue(model) end
 
 ---Set splat jitter metalness amount. Range is 0.0 to 1.0.
 ---@param model Entity a pointer to a model in the world.
 ---@param value number.
-function model.setModelSplatJitterMetalness(model, value) end
+function setModelSplatJitterMetalness(model, value) end
 
 ---Get splat jitter metalness amount.
 ---@param model Entity a pointer to a model in the world.
 ---@return float
-function model.getModelSplatJitterMetalness(model) end
+function getModelSplatJitterMetalness(model) end
 
 ---Set splat jitter bump amount. Range is 0.0 to 1.0.
 ---@param model Entity a pointer to a model in the world.
 ---@param value number.
-function model.setModelSplatJitterBump(model, value) end
+function setModelSplatJitterBump(model, value) end
 
 ---Get splat jitter bump amount.
 ---@param model Entity a pointer to a model in the world.
 ---@return float
-function model.getModelSplatJitterBump(model) end
+function getModelSplatJitterBump(model) end
 
 ---Set how fluffy are the splats. Range is 0.0 to 1.0.
 ---@param model Entity a pointer to a model in the world.
 ---@param value number.
-function model.setModelSplatFluff(model, value) end
+function setModelSplatFluff(model, value) end
 
 ---Get how fluffy are the splats. Range is 0.0 to 1.0
 ---@param model Entity a pointer to a model in the world.
 ---@return float
-function model.getModelSplatFluff(model) end
+function getModelSplatFluff(model) end
 
 ---Set if this model has a visible border to highlight a selection.
 ---@param model Entity a pointer to a model in the world.
 ---@param state boolean.
-function model.setModelBorderVisible(model, state) end
+function setModelBorderVisible(model, state) end
 
 ---Get if this model has a visible border.
 ---@param model Entity a pointer to a model in the world.
 ---@return bool
-function model.getModelBorderVisible(model) end
+function getModelBorderVisible(model) end
 
-return model
