@@ -24,7 +24,7 @@ function setSynthVolume(synth, volumeLeft, volumeRight) end
 ---@param midiNote float midi note.
 ---@param sustainTime float how long the note will be sustained.
 ---@param optional [delayTime] float how long should the note wait before being played.
-function playSynthNote(synth, midiNote, sustainTime, [delayTime]) end
+function playSynthNote(synth, midiNote, sustainTime, delayTime) end
 
 ---Stop a note while it's still playing.
 ---@param synth Synth a pointer to a synth in memory.
@@ -88,4 +88,3 @@ function getSynthNoiseOut(synth) end
 ---Set the global sound volume.
 ---@param value number.
 function setGlobalSynthVolume(value) end
-

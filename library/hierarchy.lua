@@ -22,4 +22,3 @@ function getParent(entity) end
 ---@param entity Entity a pointer to an entity in the world.
 ---@return Table a list of children
 function getChildren(entity) end
-

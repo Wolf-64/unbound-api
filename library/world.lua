@@ -42,7 +42,7 @@ function getScreenRay(screenPosition) end
 ---@param rayDirection vec3.
 ---@param optional [tag] string.
 ---@return hit hit.entity, hit.distance, hit.hitPoint
-function findRaycastHit(rayOrigin, rayDirection, [tag]) end
+function findRaycastHit(rayOrigin, rayDirection, tag) end
 
 ---Faster way to find the closest intersection, comes at the cost of returning coarser results that will be imprecise with blocky distances.
 ---@param rayOrigin vec3.
@@ -125,4 +125,3 @@ function deinstance(entity) end
 ---@param entity Entity a pointer to an entity in the world.
 ---@return int
 function getInstanceCount(entity) end
-

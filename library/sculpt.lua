@@ -303,4 +303,3 @@ function editMarkerAddEdit(editMarker, edit) end
 ---@param editMarker Entity a pointer to an EditMarker in the world.
 ---@param color vec4.
 function setEditMarkerColor(editMarker, color) end
-
