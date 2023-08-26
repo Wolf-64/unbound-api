@@ -382,4 +382,3 @@ function setGridColor(grid, color) end
 ---@param grid Entity a pointer to a grid in the world.
 ---@param value number.
 function setGridFadeRadius(grid, value) end
-

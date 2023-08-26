@@ -2,7 +2,7 @@
 
 -- User interfaces in unbound are made using panels.
 -- Panels are entities that show as a flat surface, they can be visualized in 3d or 2d, they can display colors, borders and text.
-user interface = {}
+user_interface = {}
 
 ---Get the window size.
 ---@return vec2
@@ -201,4 +201,3 @@ function sendCharToTextEditor(panel, text) end
 ---@param shiftPressed .
 ---@param altPressed .
 function sendKeyDownToTextEditor(panel, keyCode, ctrlPressed, shiftPressed, altPressed) end
-

@@ -39,4 +39,3 @@ function getGlobalPreference(key) end
 function setOnPreferencesChanged(callback) end
 
 function System.setGlobalPreference(key, value) end
-

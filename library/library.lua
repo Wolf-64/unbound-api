@@ -8,15 +8,15 @@ library = {}
 ---Load a collection from file.
 ---Load a collection from file.
 ---@param filePath string relative path (ex. "model/myAsset.ubs").
----@param optional [callback] function(statusloaded_collection) async callback invoked once the collection has been loaded.
+---@param optional callback function(statusloaded_collection) async callback invoked once the collection has been loaded.
 ---@return Table or IOTask You get an entity list if no callback is passed, otherwise a handle to the async task if a callback is passed
-function libraryLoadCollection(filePath, [callback]) end
+function libraryLoadCollection(filePath, callback) end
 
 ---Save a collection to disc.
 ---@param filePath string relative path (ex. "model/myAsset.ubs").
 ---@param entities table list of entities to be saved.
----@param optional [callback] function(status) async callback invoked once the operation is done.
-function librarySaveCollection(filePath, entities, [callback]) end
+---@param optional callback function(status) async callback invoked once the operation is done.
+function librarySaveCollection(filePath, entities, callback) end
 
 ---Get a list of all collections inside Documents/Unbound/Library and subfolders.
 ---@param callback function(statusresults) async callback invoked once the operation is done.

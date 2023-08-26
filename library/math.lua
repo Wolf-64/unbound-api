@@ -195,4 +195,3 @@ function mod(value) end
 ---@param value number.
 ---@return float
 function pow(value) end
-

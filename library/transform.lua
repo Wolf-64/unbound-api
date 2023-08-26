@@ -141,4 +141,3 @@ function rollBy(entityOrTransform, value) end
 ---@param upVec .
 ---@return quat
 function lookAtOrientation(forwardVec, upVec) end
-

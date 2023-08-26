@@ -154,4 +154,3 @@ function setModelBorderVisible(model, state) end
 ---@param model Entity a pointer to a model in the world.
 ---@return bool
 function getModelBorderVisible(model) end
-
