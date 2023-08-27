@@ -50,4 +50,3 @@ function createCollection(entities) end
 ---@param collection Collection.
 ---@return Table List of entities instantiated
 function instantiateCollection(collection) end
-
