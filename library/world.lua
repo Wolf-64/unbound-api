@@ -38,11 +38,11 @@ function world.findByType(type) end
 function world.getScreenRay(screenPosition) end
 
 ---Shoot a ray to see if a model or panel is hit. Optionally specify a tag to restrict the search.
----@param rayOrigin vec3
----@param rayDirection vec3
----@param optional? tag string
----@return hit # hit.entity, hit.distance, hit.hitPoint
-function world.findRaycastHit(rayOrigin, rayDirection, tag) end
+---@param rayOrigin vec3.
+---@param rayDirection vec3.
+---@param optional [tag] string.
+---@return hit hit.entity, hit.distance, hit.hitPoint
+function findRaycastHit(rayOrigin, rayDirection, tag) end
 
 ---Faster way to find the closest intersection, comes at the cost of returning coarser results that will be imprecise with blocky distances.
 ---@param rayOrigin vec3
@@ -124,4 +124,4 @@ function world.deinstance(entity) end
 ---Get the number of cloned instances for this entity.
 ---@param entity Entity: a pointer to an entity in the world
 ---@return int
-function world.getInstanceCount(entity) end
+function getInstanceCount(entity) end

@@ -55,4 +55,4 @@ function input.getKeyDown(key) end
 
 ---Get text as it's being typed on the keyboard.
 ---@return string
-function input.getTextInput() end
+function getTextInput() end

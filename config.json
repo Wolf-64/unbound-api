@@ -2,13 +2,5 @@
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_config.schema.json",
   "name": "Unbound API addon",
   "words": ["unbound", "%s+unbound%-addon"],
-  "files": ["PlayScript.lua"],
-  "settings": {
-    "Lua.workspace.preloadFileSize": 5000,
-    "Lua.workspace.ignoreDir": ["ignore-me"],
-    "Lua.workspace.library": "/home/wolf/Projects/Lua/UnboundAPI/library/",
-    "Lua.diagnostics.groupSeverity": {
-      "await": "Error"
-    }
-  }
+  "files": ["PlayScript.lua"]
 }

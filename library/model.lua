@@ -150,4 +150,4 @@ function model.setModelBorderVisible(model, state) end
 ---Get if this model has a visible border.
 ---@param model Entity: a pointer to a model in the world
 ---@return bool
-function model.getModelBorderVisible(model) end
+function getModelBorderVisible(model) end

@@ -19,7 +19,12 @@ function sound.destroySynth(synth) end
 function sound.setSynthVolume(synth, volumeLeft, volumeRight) end
 
 ---Play a midi note keeping it sustained for a certain amount of time.
-function sound.playSynthNote(synth, midiNote, sustainTime, delayTime) end
+---Play a midi note keeping it sustained for a certain amount of time.
+---@param synth Synth a pointer to a synth in memory.
+---@param midiNote float midi note.
+---@param sustainTime float how long the note will be sustained.
+---@param optional [delayTime] float how long should the note wait before being played.
+function playSynthNote(synth, midiNote, sustainTime, delayTime) end
 
 ---Stop a note while it's still playing.
 ---@param synth Synth: a pointer to a synth in memory
@@ -78,5 +83,5 @@ function sound.setSynthNoise(synth, noiseAmount, noiseFrequency) end
 function sound.getSynthNoiseOut(synth) end
 
 ---Set the global sound volume.
----@param value number
-function sound.setGlobalSynthVolume(value) end
+---@param value number.
+function setGlobalSynthVolume(value) end

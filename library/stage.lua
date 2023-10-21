@@ -372,6 +372,6 @@ function stage.setGridSpacing(grid, value) end
 function stage.setGridColor(grid, color) end
 
 ---Set the grid's fade radius, move the grid to reposition the fade origin.
----@param grid Entity: a pointer to a grid in the world
----@param value number
-function stage.setGridFadeRadius(grid, value) end
+---@param grid Entity a pointer to a grid in the world.
+---@param value number.
+function setGridFadeRadius(grid, value) end

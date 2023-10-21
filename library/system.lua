@@ -38,6 +38,4 @@ function system.getGlobalPreference(key) end
 ---@param callback function()
 function system.setOnPreferencesChanged(callback) end
 
----key, .
----@param value number
-function system.System.setGlobalPreference(key, value) end
+function System.setGlobalPreference(key, value) end

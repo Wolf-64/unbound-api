@@ -194,4 +194,4 @@ function math.mod(value) end
 
 ---value, number.
 ---@return float
-function math.pow(value) end
+function pow(value) end

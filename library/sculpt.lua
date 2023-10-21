@@ -297,6 +297,6 @@ function sculpt.clearEditMarker(editMarker) end
 function sculpt.editMarkerAddEdit(editMarker, edit) end
 
 ---Set the color of all the wireframes visualized by this EditMarker.
----@param editMarker Entity: a pointer to an EditMarker in the world
----@param color vec4
-function sculpt.setEditMarkerColor(editMarker, color) end
+---@param editMarker Entity a pointer to an EditMarker in the world.
+---@param color vec4.
+function setEditMarkerColor(editMarker, color) end

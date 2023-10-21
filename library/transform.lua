@@ -136,4 +136,4 @@ function transform.rollBy(entityOrTransform, value) end
 ---@param forwardVec
 ---@param upVec
 ---@return quat
-function transform.lookAtOrientation(forwardVec, upVec) end
+function lookAtOrientation(forwardVec, upVec) end

@@ -19,6 +19,6 @@ function hierarchy.detach(entity) end
 function hierarchy.getParent(entity) end
 
 ---Get the children of an entity.
----@param entity Entity: a pointer to an entity in the world
----@return Table # a list of children
-function hierarchy.getChildren(entity) end
+---@param entity Entity a pointer to an entity in the world.
+---@return Table a list of children
+function getChildren(entity) end
